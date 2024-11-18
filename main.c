@@ -36,11 +36,23 @@ switch(choix) {
         break;
 
     case 4:
-        float(premierchiffre);
-        float(secondchiffre);
-        printf("%f + %f = %.3f",premierchiffre, secondchiffre, premierchiffre + secondchiffre);
+        printf("%d / %d = %d",premierchiffre, secondchiffre, premierchiffre / secondchiffre);
+        break;
+    
+    case 5:
+        int valor;
+        printf("Voulez-vous la valeur absolue du chiffre 1 ou du chiffre 2 ? \n");
+        scanf("%d", &valor);
+        //
+        if (valor == 1 && premierchiffre < 0) {
+            printf("La valeur absolue de %d est égale à %d", premierchiffre, -premierchiffre);}
+            //
+        else if (valor == 2 && secondchiffre < 0) {
+            printf("La valeur absolue de %d est égale à %d", secondchiffre, -secondchiffre);}
+        
+        }
 
     return 0;
-                }
+                
 
 }
